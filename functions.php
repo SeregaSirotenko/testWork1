@@ -3,47 +3,53 @@
 header('Content-Type: text/html; charset=utf-8');
 
 /**
-*@param numeric $x integer to output
-*@param numeric $y integer to output
-*@author Sergey
-*@return numeric
+* Функция выполняет математическую операцию сложение
+*
+* @author Sergey
+* @param numeric $x integer to output
+* @param numeric $y integer to output
+* @return numeric
 */
-function mySum(integer $x, integer $y){
+function mySum($x, $y) {
     return $x + $y;
 }
 
 /**
-*@param numeric $x integer to output
-*@param numeric $y integer to output
-*@author Sergey
-*@return numeric
+* Функция выполняет математическую операцию вычитание
+*
+* @author Sergey
+* @param numeric $x integer to output
+* @param numeric $y integer to output
+* @return numeric
 */
-function myDif($x, $y){
+function myDif($x, $y) {
     return $x - $y;
 }
 
 /**
-*@param numeric $x integer to output
-*@param numeric $y integer to output
-*@author Sergey
-*@return numeric
+* Функция выполняет математическую операцию умножение
+*
+* @author Sergey
+* @param numeric $x integer to output
+* @param numeric $y integer to output
+* @return numeric
 */
-function myMul($x, $y){
+function myMul($x, $y) {
     return $x * $y;
 }
 
 /**
-*@param numeric $x integer to output
-*@param numeric $y integer to output
-*@author Sergey
-*@return numeric
+* Функция выполняет математическую операцию деление
+*
+* @author Sergey
+* @param numeric $x integer to output
+* @param numeric $y integer to output
+* @return numeric
 */
-function myDiv($x, $y){
+function myDiv($x, $y) {
     if ($x == 0 || $y == 0) {
-        echo "На 0 делить нельзя!!!";
-    }else{
+        echo 'На 0 делить нельзя!!!';
+    } else {
         return $x / $y;
     }
 }
-
-?>

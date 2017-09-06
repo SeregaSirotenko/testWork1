@@ -1,30 +1,28 @@
 <?php
 
-include 'functions.php';
+include __DIR__ . '/functions.php';
 
 $n1 = $_POST['number1'];
 $n2 = $_POST['number2'];
 $res = $_POST['operator'];
 
 switch ($res) {
-    case 'Sum':
+    case 'sum':    
         echo mySum($n1,$n2);
         break;
 
-    case 'Subtraction':
+    case 'subtraction':
         echo myDif($n1,$n2);
         break;
 
-    case 'Multiplication':
+    case 'multiplication':
         echo myMul($n1,$n2);
         break;
 
-    case 'Division':
+    case 'division':
         echo myDiv($n1,$n2);
         break;
 
     default:
-        echo "Неизвестный оператор";    
+        echo 'Неизвестный оператор';    
 }
-
-?>
